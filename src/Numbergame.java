@@ -4,7 +4,8 @@ class Numbergame
 {
     public static void main(String args[])
     {
-        int random=(int)(Math.random()*100)+1;
+//      int random=(int)(Math.random()*100)+1;
+
         int chances=8;
         int score=0;
         boolean gameagain=true;
@@ -13,6 +14,7 @@ class Numbergame
         System.out.println("You have "+chances+" chances in the Game");
         while (gameagain)
         {
+            int random=(int)(Math.random()*100)+1;
             boolean guess=false;
             for(int i=1;i<=chances;i++)
             {
